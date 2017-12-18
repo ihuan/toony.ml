@@ -1,3 +1,9 @@
+---
+layout: null
+---
+
+@import url("pygment_highlights.css");
+
 /* --- General --- */
 
 body {
@@ -6,13 +12,13 @@ body {
   color: #404040;
   position: relative;
   background: #FFF;
-  display: flex;
-  flex-flow: column;
-  height: 100vh;
-}
-.container[role=main] {
-  margin-bottom:50px;
-  flex: 1 0 auto;
+  {% if site.page-col %}
+  background: {{ site.page-col }};
+  {% endif %}
+  {% if site.page-img %}
+  background-image: url({{ site.page-img }});
+  background-attachment: fixed;
+  {% endif %}
 }
 p {
   line-height: 1.5;
@@ -86,13 +92,7 @@ img::-moz-selection {
 }
 
 img {
-  display: block;
-  margin: auto;
   max-width: 100%;
-}
-
-.img-title {
-  width: 100%;
 }
 
 .disqus-comments {
@@ -111,6 +111,13 @@ img {
   background: #F5F5F5;
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  {% if site.navbar-col %}
+  background: {{ site.navbar-col }};
+  {% endif %}
+  {% if site.navbar-img %}
+  background-image: url({{ site.navbar-img }});
+  background-attachment: fixed;
+  {% endif %}
 }
 
 .navbar-custom .nav li a {
@@ -270,8 +277,15 @@ footer {
   padding: 30px 0;
   background: #F5F5F5;
   border-top: 1px #EAEAEA solid;
-  margin-top: auto;
+  margin-top: 50px;
   font-size: 14px;
+  {% if site.footer-col %}
+  background: {{ site.footer-col }};
+  {% endif %}
+  {% if site.footer-img %}
+  background-image: url({{ site.footer-img }});
+  background-attachment: fixed;
+  {% endif %}
 }
 
 footer a {
@@ -348,11 +362,6 @@ footer .theme-by {
   font-style: italic;
   margin: 0 0 10px;
 }
-.post-preview .post-meta a,
-.post-heading .post-meta a {
-  color: #404040;
-  text-decoration: none;
-}
 .post-preview .post-entry {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -362,7 +371,6 @@ footer .theme-by {
 }
 .post-entry {
   width: 100%;
-  margin-top: 10px;
 }
 .post-image {
   float: right;
@@ -381,7 +389,6 @@ footer .theme-by {
 }
 .post-preview .post-read-more {
   font-weight: 800;
-  float: right;
 }
 
 @media only screen and (min-width: 768px) {
@@ -582,6 +589,16 @@ footer .theme-by {
   border-bottom-left-radius: 5px;
 }
 
+#header-gh-btns {
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 500px) {
+  #header-gh-btns > iframe {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
 /* --- Pager --- */
 
 .pager li a {
@@ -657,22 +674,78 @@ table tr td :last-child {
   margin-bottom: 0;
 }
 
+/* --- Code blocks --- */
+
+pre {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+pre code {
+  white-space: pre;
+}
+pre.highlight, .highlight > pre, td.code pre {
+  background: #FAFAFA;
+  background-image: linear-gradient(#F9F9F9 50%, #FDFDFD 50%);
+  background-repeat: repeat;
+  background-size: 3em 3em;
+  background-position: 0px 10px;
+  border-left: 7px solid #444;
+}
+code table, code table td, code table th, code table tbody, code table tr,
+td.gutter pre {
+  padding: 0;
+  border: none;
+  background-color: #fff;
+}
+.highlight > pre {
+  padding: 0;
+}
+td.code pre {
+  border-width: 0 0 0 2px;
+  border-style: solid;
+  border-color: #444;
+  border-radius: 0;
+}
+td.gutter {
+  padding-top: 3px;
+}
+
 /* --- Social media sharing section --- */
 
 #social-share-section {
   margin-bottom: 30px;
 }
 
-/* --- Google Custom Search Engine Popup --- */
-#modalSearch table tr, #modalSearch table tr td, #modalSearch table tr th {
-  border:none;
+/* --- Notification boxes --- */
+.box-note, .box-warning, .box-error {
+  padding: 15px 15px 15px 10px;
+  margin: 20px 20px 20px 5px;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 5px 3px 3px 5px;
 }
-.reset-box-sizing, .reset-box-sizing *, .reset-box-sizing *:before, .reset-box-sizing *:after,  .gsc-inline-block {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
+
+.box-note {
+  background-color: #eee;
+  border-left-color: #2980b9;
 }
-input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gsc-search-button {
-  box-sizing: content-box;
-  line-height: normal;
+
+.box-warning {
+  background-color: #fdf5d4;
+  border-left-color: #f1c40f;
+}
+
+.box-error {
+  background-color: #f4dddb;
+  border-left-color: #c0392b;
+}
+
+/* Fix table border github gist snippets */
+
+.gist, .gist-file table tr {
+  border: unset;
+}
+
+.gist, .gist-file table tr td {
+  border: unset;
 }
