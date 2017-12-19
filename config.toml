@@ -10,6 +10,7 @@ pygmentCodeFences = true
 #googleAnalytics = "XXX"
 
 [Params]
+  introduce = "Hi, I'm Tony"
   subtitle = "餐饮创业者/软件工程师/吉他爱好者"
   logo = "img/avatar-icon.png"
   favicon = "img/favicon.ico"

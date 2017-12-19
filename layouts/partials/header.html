@@ -1,5 +1,6 @@
 {{ if .IsHome }}
   {{ $.Scratch.Set "title" .Site.Title }}
+  {{ $.Scratch.Set "introduce" .Site.Params.introduce}}
   {{ if .Site.Params.subtitle }}{{ $.Scratch.Set "subtitle" .Site.Params.subtitle }}{{ end }}
   {{ if .Site.Params.bigimg }}{{ $.Scratch.Set "bigimg" .Site.Params.bigimg }}{{ end }}
 {{ else }}
@@ -17,12 +18,13 @@
   <header class="header-section {{ if $bigimg }}has-img{{ end }}">
     {{ if $bigimg }}
       <div class="intro-header big-img">
+      
         {{ $subtitle := $.Scratch.Get "subtitle" }}
         <div class="container">
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <div class="{{ .Type }}-heading">
-                <h1>{{ with $.Scratch.Get "title" }}{{.}}{{ else }}<br/>{{ end }}</h1>
+                <h1>{{ with $.Scratch.Get "introduce" }}{{.}}{{ else }}<br/>{{ end }}</h1>
                   {{ if $subtitle }}
                     {{ if eq .Type "page" }}
                       <hr class="small">
