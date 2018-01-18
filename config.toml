@@ -33,28 +33,28 @@ pygmentCodeFences = true
   desc = "Hexagon"
 
 [Author]
-  name = "@Tony Li"
+  name = "@Tony"
   website = "toony.ml"
   email = "tonghuan.li0@gmail.com"
   facebook = "shao.huan.5"
-  googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
-  github = "username"
-  gitlab = "username"
-  twitter = "username"
-  reddit = "username"
-  linkedin = "username"
-  xing = "username"
-  stackoverflow = "users/XXXXXXX/username"
-  snapchat = "username"
-  instagram = "username"
-  youtube = "user/username" # or channel/channelname
-  soundcloud = "username"
-  spotify = "username"
-  bandcamp = "username"
-  itchio = "username"
-  vk = "username"
-  paypal = "username"
-  telegram = "username"
+  googleplus = "u/0/113473645343270626302" # or xxxxxxxxxxxxxxxxxxxxx
+  github = "ihuan"
+  twitter = "huanshao"
+  #linkedin = "username"
+  #xing = "username"
+  #stackoverflow = "users/XXXXXXX/username"
+  #snapchat = "username"
+  instagram = "tonghuan.li"
+  youtube = "" # or channel/channelname
+  #soundcloud = "username"
+  spotify = "Tony"
+  #bandcamp = "username"
+  #itchio = "username"
+  # = "username"
+  #paypal = "username"
+  #telegram = "username"
+  #gitlab = "username"
+  #reddit = "username"
 
 [[menu.main]]
     name = "首页"
