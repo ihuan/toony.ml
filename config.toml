@@ -4,9 +4,9 @@ DefaultContentLanguage = "zh"
 title = "Tony"
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
-pygmentsUseClasses = true
-pygmentCodeFences = true
-#disqusShortname = "XXX"
+#pygmentsUseClasses = true
+#pygmentCodeFences = true
+disqusShortname = "disqus_WLwfa7v6hN"
 #googleAnalytics = "XXX"
 
 [Params]
