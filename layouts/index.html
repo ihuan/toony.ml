@@ -24,7 +24,9 @@
                 {{ end }}
               </a>
 
+			  
               {{ partial "post_meta.html" . }}
+			  <!--  comment out [Read More]
               <div class="post-entry">
                 {{ if .Truncated }}
                   {{ .Summary }}
@@ -33,6 +35,7 @@
                   {{ .Content }}
                 {{ end }}
               </div>
+			  -->
 
               {{ if .Params.tags }}
                 <span class="post-meta">
