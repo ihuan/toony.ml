@@ -1,7 +1,7 @@
 ---
-title: 衣服
+title: Clothes
 date: 2018-01-23
-tags: ["英语"]
+tags: ["English"]
 ---
 
 <!--more-->

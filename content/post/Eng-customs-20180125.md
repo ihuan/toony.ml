@@ -1,7 +1,7 @@
 ---
 title: Customs
 date: 2018-01-25
-tags: ["英语"]
+tags: ["English"]
 ---
 
 <!--more-->
