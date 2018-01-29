@@ -33,10 +33,10 @@ A: I'm travelling alone /by myself.
 A: I'm travelling with my friends/family.
 
 Q: Who packed your bag?
-A: I did.
+A: I did.  
 
-Excuse me, could you please say that again?
-Excuse me, could you please speak slower?
+* Excuse me, could you please say that again?  
+* Excuse me, could you please speak slower?
 
 ```
 
