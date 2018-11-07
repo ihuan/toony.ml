@@ -14,7 +14,7 @@ _核心动画(T1)_
 
 <center>
 
-![Core Animation.png](./post/resources/F9AB39A750CC347315E7438BBF54A351.png)
+![Core Animation.png](toony.ml/post/resources/F9AB39A750CC347315E7438BBF54A351.png)
 </center>
 
 * 核心动画位于UIKit的下一层，相比UIView动画，它可以实现更复杂的动画效果。
@@ -29,7 +29,7 @@ _核心动画(T1)_
 ### 3. 层次结构
 <center>
 
-![Core Animation struct.png](./post/resources/C494D043B0116EF7B0242ED303681D75.png)
+![Core Animation struct.png](toony.ml/post/resources/C494D043B0116EF7B0242ED303681D75.png)
 </center>
 
 * CAAnimation: 所有动画对象的父类，实现CAMediaTiming协议，负责控制动画的时间、速度和时间曲线等等，是一个抽象类，不能直接使用。
