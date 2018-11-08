@@ -13,7 +13,7 @@ _核心动画(T1)_
 ### 1. 位置
 
 <center>
-
+	
 ![Core Animation.png](https://toony.ml/post/resources/F9AB39A750CC347315E7438BBF54A351.png)
 </center>
 
@@ -53,3 +53,16 @@ _核心动画(T1)_
 * 初始化 CAAnimation
 * 设置动画的相关属性，时间，曲线，keyPath目标，代理等等
 * 添加动画
+
+### 5. 常用属性
+* keyPath 不同的属性值达到对应的动画效果
+* duration 动画的持续时间
+* repeatCount 动画重复次数
+* timingFunction 动画的时间节奏控制
+* fillMode 视图在非Active时的行为
+* removedOnCompletion 动画完成后是否从图层上移除
+* beginTime 动画执行时间
+* delegate 代理
+
+### 6. 项目地址
+[核心动画](https://github.com/ihuan/iOS-StudyDemo/tree/master/%E5%8A%A8%E7%94%BB/02-%E6%A0%B8%E5%BF%83%E5%8A%A8%E7%94%BB)
