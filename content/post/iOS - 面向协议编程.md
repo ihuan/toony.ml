@@ -19,6 +19,7 @@ _Swift面向协议编程_
 
 ### 1. 定义协议
 * 与Label相关的协议
+
 ```swift
 protocol TitlePresentable {
     var title: String { get }
@@ -28,7 +29,9 @@ protocol TitlePresentable {
     func updateTitleLabel(label: UILabel)
 }
 ```
+
 * 与UIImageView相关的协议
+
 ```swift
 protocol ThumbnailPresentable {
     var thumbnailUrl: String { get }
