@@ -36,6 +36,7 @@ protocol TitlePresentable {
 protocol ThumbnailPresentable {
     var thumbnailUrl: String { get }
     var thumbnailHandler: (() -> Void)? { get }
+    
     func updateImageView(imageView: UIImageView)
 }
 ```
