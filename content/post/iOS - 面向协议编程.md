@@ -69,25 +69,9 @@ struct NewsViewModel: NewsPresentable {
 ### 3. 在View中，根据传入的ViewModel，实际是NewsPresentable，这里就把面向协议编程的好处体现的淋漓尽致了
 
 ```swift
-typealias NewsPresentable = TitlePresentable & ThumbnailPresentable
-
-struct NewsViewModel: NewsPresentable {
- 
-    var title: String
-    var titleColor: UIColor
-    var thumbnailUrl: String
-    var thumbnailHandler: (() -> Void)?
-    
-    init(news: News, thumbnailHandler:@escaping (() -> Void)) {
-        self.title = news.title
-        if news.titleColor == "orange" {
-            self.titleColor = UIColor.orange
-        } else {
-            self.titleColor = UIColor.black
-        }
-        self.thumbnailUrl = news.thumbnailUrl
-        self.thumbnailHandler = thumbnailHandler
-    }
+func updateWithPresenter(presenter: NewsPresentable) {
+    presenter.updateTitleLabel(label: titleLabel)
+    presenter.updateImageView(imageView: headView)
 }
 ```
 
