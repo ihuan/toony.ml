@@ -1,6 +1,6 @@
 ---
 title: iOS - 面向协议编程
-date: 2019-01-09
+date: 2018-04-22
 tags: ["iOS"]
 ---
 
@@ -14,7 +14,7 @@ _Swift面向协议编程_
 
 <center>
 
-![面向协议编程.gif](/resources/20190109/9246F2094271C2B7FE767B47122B95EB.gif)
+![面向协议编程.gif](/resources/20180422/9246F2094271C2B7FE767B47122B95EB.gif)
 </center>
 
 ### 1. 定义协议
