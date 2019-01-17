@@ -1,4 +1,4 @@
-baseurl = "https://toony.tk/"
+baseurl = "https://toony.ml/"
 DefaultContentLanguage = "zh"
 #DefaultContentLanguage = "ja"
 title = "Tony"
@@ -34,7 +34,7 @@ disqusShortname = "toony-tk"
 
 [Author]
   name = "@Tony"
-  website = "toony.tk"
+  website = "toony.ml"
   email = "tonghuan.li0@gmail.com"
   facebook = "shao.huan.5"
   googleplus = "u/0/113473645343270626302" # or xxxxxxxxxxxxxxxxxxxxx
