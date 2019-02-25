@@ -11,7 +11,7 @@ disqusShortname = "toony-tk"
 
 [Params]
   introduce = "Hi, I'm Tony"
-  subtitle = "软件工程师／英语爱好着／吉他爱好者"
+  subtitle = “iOS开发工程师／英语学习者／吉他爱好者"
   logo = "img/avatar-icon.png"
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"
