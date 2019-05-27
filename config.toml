@@ -4,7 +4,6 @@ DefaultContentLanguage = "zh"
 title = "Tonio"
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
-useChroma = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 #disqusShortname = "toony-tk"
@@ -40,18 +39,18 @@ pygmentsUseClasses = true
   name = "@Tonio"
   website = "toony.ml"
   email = "tonghuan.li0@gmail.com"
-  facebook = "shao.huan.5"
-  googleplus = "u/0/113473645343270626302" # or xxxxxxxxxxxxxxxxxxxxx
+  #facebook = "shao.huan.5"
+  #googleplus = "u/0/113473645343270626302" # or xxxxxxxxxxxxxxxxxxxxx
   github = "ihuan"
-  twitter = "huanshao"
+  #twitter = "huanshao"
   #linkedin = "username"
   #xing = "username"
   #stackoverflow = "users/XXXXXXX/username"
   #snapchat = "username"
-  instagram = "tonghuan.li"
-  youtube = "" # or channel/channelname
+  #instagram = "tonghuan.li"
+  #youtube = "" # or channel/channelname
   #soundcloud = "username"
-  spotify = "Tonio"
+  #spotify = "Tonio"
   #bandcamp = "username"
   #itchio = "username"
   # = "username"
@@ -72,27 +71,21 @@ pygmentsUseClasses = true
 
 [[menu.main]]
     parent = "type"
-    name = "生活记录"
+    name = "生活"
     url = "post/2017-03-07-bigimg-sample"
     weight = 1
 
 [[menu.main]]
     parent = "type"
-    name = "英语学习"
+    name = "iOS"
     url = "post/2017-03-05-math-sample"
     weight = 2
 
 [[menu.main]]
     parent = "type"
-    name = "影视音乐"
+    name = "吉他"
     url = "post/2016-03-08-code-sample"
     weight = 3
-
-[[menu.main]]
-    parent = "type"
-    name = "吉他学习"
-    url = "post/2016-03-08-code-sample"
-    weight = 4
 
 [[menu.main]]
     name = "标签"

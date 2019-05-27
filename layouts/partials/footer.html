@@ -16,6 +16,7 @@
             {{- end -}}
           {{ end }}
           {{ if .Site.Params.rss }}
+          <!-- 
           <li>
             <a href="{{ .RSSLink }}" title="RSS">
               <span class="fa-stack fa-lg">
@@ -24,6 +25,7 @@
               </span>
             </a>
           </li>
+          -->
           {{ end }}
         </ul>
         <p class="credits copyright text-muted">
@@ -35,14 +37,14 @@
             {{ end }}
           {{ end }}
 
-          &nbsp;&bull;&nbsp;
-          {{ .Site.LastChange.Format "2006" }}
-
+          &nbsp;&bull;&nbsp; 2019
+          <!-- {{ .Site.LastChange.Format "2006" }} -->
+          <!-- 
           {{ if .Site.Title }}
             &nbsp;&bull;&nbsp;
-            <!-- <a href="{{ "" | absLangURL }}">{{ .Site.Author.email}}</a> -->
             <a href="mailto: {{.Site.Author.email}}">{{ .Site.Author.email}}</a>
           {{ end }}
+          -->
         </p>
         <!-- Please don't remove this, keep my open source work credited :) -->
         <!--
