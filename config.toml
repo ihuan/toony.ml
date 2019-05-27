@@ -1,23 +1,27 @@
 baseurl = "https://toony.ml/"
 DefaultContentLanguage = "zh"
 #DefaultContentLanguage = "ja"
-title = "Tony"
+title = "Tonio"
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
-#pygmentsUseClasses = true
-#pygmentCodeFences = true
-disqusShortname = "toony-tk"
+useChroma = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+#disqusShortname = "toony-tk"
 #googleAnalytics = "XXX"
 
 [Params]
-  introduce = "Hi, I'm Tony"
-  subtitle = "iOS开发工程师／英语学习者／吉他爱好者"
+  introduce = "Hi, I'm Tonio"
+  subtitle = "iOS开发工程师／吉他爱好者"
   logo = "img/avatar-icon.png"
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"
   commit = false
   rss = true
   comments = true
+  # 使用 userChroma 语法高亮
+  useChroma = true
+  useHLJS = false
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
 [[Params.bigimg]]
@@ -33,7 +37,7 @@ disqusShortname = "toony-tk"
   desc = "Hexagon"
 
 [Author]
-  name = "@Tony"
+  name = "@Tonio"
   website = "toony.ml"
   email = "tonghuan.li0@gmail.com"
   facebook = "shao.huan.5"
@@ -47,7 +51,7 @@ disqusShortname = "toony-tk"
   instagram = "tonghuan.li"
   youtube = "" # or channel/channelname
   #soundcloud = "username"
-  spotify = "Tony"
+  spotify = "Tonio"
   #bandcamp = "username"
   #itchio = "username"
   # = "username"
