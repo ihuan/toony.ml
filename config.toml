@@ -6,7 +6,7 @@ theme = "beautifulhugo"
 metaDataFormat = "yaml"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-#disqusShortname = "toony-tk"
+disqusShortname = "toony-ml"
 #googleAnalytics = "XXX"
 
 [Params]
