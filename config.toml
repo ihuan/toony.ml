@@ -6,7 +6,7 @@ theme = "beautifulhugo"
 metaDataFormat = "yaml"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-disqusShortname = "toony-ml"
+#disqusShortname = "toony-ml"
 #googleAnalytics = "XXX"
 
 [Params]
@@ -15,9 +15,10 @@ disqusShortname = "toony-ml"
   logo = "img/avatar-icon.png"
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"
-  commit = false
-  rss = true
-  comments = true
+  gitments = true
+  # comments = true
+  # commit = false
+  # rss = true
   # 使用 userChroma 语法高亮
   useChroma = true
   useHLJS = false

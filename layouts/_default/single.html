@@ -19,6 +19,25 @@
         {{ end }}
       </ul>
 
+     <!-- gitalk 评论功能 -->
+     {{ if (.Site.Params.gitments) }}
+        <div id="git-comments"></div>
+        <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+        <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+        <script>
+          var gitment = new Gitment({
+            id: 'tonghuan.li1987',  // 可选, 默认为 location.href
+            owner: 'ihuan',
+            repo: 'https://github.com/ihuan/Gitments.git',
+            oauth: {
+              client_id: '82f5b2abc72d4453892c',
+              client_secret: '6454f001be43da56e477b444dd8fcbac4cdc201a',
+            }
+          })
+          gitment.render('git-comments')
+        </script>
+      {{ end }}
+      <!-- end -->
 
       {{ if (.Params.comments) | or (and (or (not (isset .Params "comments")) (eq .Params.comments nil)) (.Site.Params.comments)) }}
         {{ if .Site.DisqusShortname }}
