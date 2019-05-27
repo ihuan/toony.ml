@@ -30,8 +30,10 @@
         <script src="https://jjeejj.github.io/js/gitment.js"></script>
 
         <script>
+          var date = new Date();
+          var currentTime = date.toLocaleTimeString();  
           var gitment = new Gitment({
-            id: '{{ .Params.subtitle }}',  // 可选, 默认为 location.href
+            id: currentTime,  // 可选, 默认为 location.href
             owner: 'ihuan',
             repo: 'toony.ml',
             oauth: {
