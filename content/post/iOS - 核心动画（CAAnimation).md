@@ -13,7 +13,6 @@ _核心动画(T1)_
 ### 1. 位置
 
 <center>
-
 ![Core Animation.png](/resources/20180328/F9AB39A750CC347315E7438BBF54A351.png)
 </center>
 
